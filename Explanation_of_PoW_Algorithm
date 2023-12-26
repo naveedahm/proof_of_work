@@ -1,0 +1,15 @@
+1. Client would send an auth message to Server : requestToPrintQuote
+2. Server would respond with a challenge : authClient
+3. Client would generate a challenge response and send it to Server : challengeResponse
+4. Server would verify the response, authenticate the client and Server would print a quotation from a quote book : responseToPrintQuote
+
+References : 
+
+https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/
+
+https://medium.com/coinmonks/proof-of-work-1c95afde541
+
+https://github.com/joshmarshall/jsonrpctcp
+
+Demystifying Crypto-Mining : Analysis and Optimizations of memory-hard PoW Algorithms
+https://www.cse.wustl.edu/~roger/566S.s21/08695663.pdf
