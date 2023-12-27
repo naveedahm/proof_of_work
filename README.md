@@ -1,4 +1,6 @@
-# An implementation of proof of work algorithm. This algorithm was used in block chain to prevent Distributed Denial of Service Attacks.
+# An implementation of proof of work algorithm. 
+
+This algorithm was used in block chain to prevent Distributed Denial of Service Attacks.
 
 Steps to build solution
 -----------------------------

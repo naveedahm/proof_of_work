@@ -34,12 +34,13 @@ def printQuote(client_connection, client_address):
         #if not data:
         #    break
         challenge_response = data.decode()
-        print("Challenge response received from client is " + challenge_response)
+        
 
         # Verify that challenge response contains the challenge sent by the server
         if(constants.CHALLENGE_STRING in challenge_response):
 
             encoded_challenge_response = hashlib.sha256(challenge_response.encode('utf-8')).hexdigest()
+            print("Challenge response received from client is " + encoded_challenge_response)
 
             # TODO : Make this code generic to dynamically determine the number of 0s in front of hash
             challenge_string = "".ljust(constants.CHALLENGE_LENGTH, "0")
